@@ -3,7 +3,9 @@
 namespace App\Interface\Parser;
 use Illuminate\Support\Collection;
 
-interface ParserInterface
+/**
+ * return Collection
+ */
 {
     public function parse(string $path): Collection;
 }

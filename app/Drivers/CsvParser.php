@@ -7,6 +7,10 @@ use App\Interface\Parser\ParserInterface;
 use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
 
+/**
+ * Purpose to carse a csv file data
+ * 
+ */
 final class CsvParser implements ParserInterface
 {
     /**
