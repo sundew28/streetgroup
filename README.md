@@ -30,4 +30,10 @@ The purpose of the application is to extract data from a CSV file and display th
 $ php artisan parse:csv
 ```
 
-The application is designed not just to parse csv files but to handle / add drivers to parse data as per requirement. I have implemented the manager design pattern to handle this if required. 
+The application is designed not just to parse csv files but to handle / add drivers to parse data as per requirement. I have implemented the manager design pattern to handle this if required. The output will be displayed in a table format.
+
+## Improvements
+- I would like to make improvement to the error capturing by making use of error handler in laravel.
+- Check the quality of code by using tools like PHPsniffer, PHP-CS-Fixer with PSR2 and Symfony standards (much extra checks, closer to Laravel than PSR2).
+- Writing unit tests and feature tests to ensure functionality better.
+- Refactor the code to parse any input based on entry of data.
