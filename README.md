@@ -30,4 +30,4 @@ The purpose of the application is to extract data from a CSV file and display th
 $ php artisan parse:csv
 ```
 
-The application is designed not just to parse csv files but to handle / add drivers to parse data as per requirement. I have implement the manager design pattern to handle this if required. 
+The application is designed not just to parse csv files but to handle / add drivers to parse data as per requirement. I have implemented the manager design pattern to handle this if required. 
