@@ -79,10 +79,20 @@ final class CsvParser implements ParserInterface
                 $i++;
             } elseif (empty($results) && !empty($value)){
                 $explodeValue = Str::of($value)->explode("and");
-                dd($explodeValue);
-            }
-            echo $value;
-            print_r($results);
+
+                if(Str::of($explodeValue[0])->wordCount()>1){
+                    foreach($explodeValue as $values){
+                        $values = Str::of($values)->trim();                        
+                        $extractvalues =[];
+                        preg_match('#^(\w+\.?)?\s*([\'\’\w\.?]+)\s+([\'\-\w]+)\s*(\w+\.?)?$#', $values, $extractvalues);
+                        $this->outputArray[$i]['title'] = $extractvalues[1];                
+                        $this->outputArray[$i]['firstname'] = $extractvalues[2];
+                        $this->outputArray[$i]['initial'] = "";
+                        $this->outputArray[$i]['lastname'] = $extractvalues[3];
+                        $i++;
+                    }
+                } 
+            }          
         }
         // return the collection of data.
         return collect($this->outputArray);        
