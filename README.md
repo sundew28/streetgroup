@@ -36,4 +36,4 @@ The application is designed not just to parse csv files but to handle / add driv
 - I would like to make improvement to the error capturing by making use of error handler in laravel.
 - Check the quality of code by using tools like PHPsniffer, PHP-CS-Fixer with PSR2 and Symfony standards (much extra checks, closer to Laravel than PSR2).
 - Writing unit tests and feature tests to ensure functionality better.
-- Refactor the code to parse any input based on entry of data.
+- Refactor the code to parse any input based on entry of data for CSV/XML.
