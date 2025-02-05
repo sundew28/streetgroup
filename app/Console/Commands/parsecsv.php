@@ -12,7 +12,7 @@ class parsecsv extends Command
      *
      * @var string
      */
-    protected $csvPath = 'public/csv/sample.csv';
+    protected $csvPath = 'public/sample.csv';
 
     /**
      * The name and signature of the console command.
